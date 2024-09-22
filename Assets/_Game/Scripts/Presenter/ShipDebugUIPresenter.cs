@@ -12,7 +12,7 @@ public class ShipDebugUIPresenter : MonoBehaviour
     [SerializeField] private Text _laserRollbackLabel;
 
 
-    public void OnEnable()
+    public void OnEnableCustom()
     {
         _root.LaserGun.Shot += OnLaserGunShot;
         _root.LaserGun.ShotAdd += OnLaserGunShotAdd;

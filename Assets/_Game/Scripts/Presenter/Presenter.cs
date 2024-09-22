@@ -61,8 +61,8 @@ public class Presenter : MonoBehaviour
     private void OnDestroying()
     {
         Destroy(gameObject);
-        Destroying.Invoke(Model);
-        Destroyed.Invoke(this);
+        Destroying?.Invoke(Model);
+        Destroyed?.Invoke(this);
     }
 
     protected void DestroyCompose()

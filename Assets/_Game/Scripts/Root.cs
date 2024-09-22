@@ -49,7 +49,7 @@ public class Root : MonoBehaviour
     private void OnEnable()
     {
         _shipInputRouter.OnEnable();
-        _shipDebugUIPresenter.OnEnable();
+        _shipDebugUIPresenter.OnEnableCustom();
 
         _baseGun.Shot += OnShot;
         _laserGun.Shot += OnShot;

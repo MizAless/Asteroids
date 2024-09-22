@@ -9,7 +9,6 @@ public class EndGameWindowPresenter : MonoBehaviour
 
     public void Show(int score, Action onReloadClick)
     {
-        Debug.Log("Gameover");
         _scoreLabel.text = $"Your Score - {score}";
 
         _restartButton.onClick.RemoveAllListeners();
